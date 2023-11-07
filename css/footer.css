@@ -1,0 +1,41 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  /* 보이는 곳 100프로 채우기 */
+  padding: 10px 0;
+  border-top: 1px solid black;
+  background-color: white;
+}
+
+.footer-block {
+  display: flex;
+  /* 일자로 해두기 */
+  justify-content: space-evenly;
+  /* 반응형 중간 */
+  align-items: center;
+}
+
+.footer-icons__img {
+  width: 30px;
+}
+
+.footer-icons {
+  display: flex;
+  /* 일자로 해두기 */
+  flex-direction: column;
+  /* 양옆에서 위 아래로 바꾸기 */
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  /* 마우스 대면 효과 */
+}
+
+.footer-icons__desc {
+  margin-top: 5px;
+  /* font-size: 15px; */
+  font-weight: bold;
+  transform: scale(0.8);
+}
