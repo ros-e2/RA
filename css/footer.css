@@ -16,10 +16,6 @@ footer {
   align-items: center;
 }
 
-.footer-icons__img {
-  width: 30px;
-}
-
 .footer-icons {
   display: flex;
   /* 일자로 해두기 */
@@ -31,6 +27,11 @@ footer {
   padding-bottom: 30px;
   cursor: pointer;
   /* 마우스 대면 효과 */
+  transition: all 0.2 ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: rgba(254, 111, 15, 0.8);
 }
 
 .footer-icons__desc {
@@ -38,4 +39,28 @@ footer {
   /* font-size: 15px; */
   font-weight: bold;
   transform: scale(0.8);
+}
+
+@keyframes icons-둥-둥 {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.footer-icons__img {
+  width: 30px;
+}
+
+.footer-icons:hover,
+.footer-icons__img {
+  animation: 2s icons-둥-둥;
 }
